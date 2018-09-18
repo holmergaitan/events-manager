@@ -20,11 +20,10 @@
 			$http.post('events/', this.eventDetail).success(
 					function(data, status, headers, config) {
 						alert('Event created.');
+						$scope.events[$scope.events.length] = data;
 					}).error(function(data, status, headers, config) {
 				alert('Can not create event.');
 			});
-
-			this.all();
 		};
 
 		this.all = function() {

@@ -83,6 +83,6 @@ public class EventsController {
     	
     	final Event event = modelConverter.convert(source);
     	eventService.save(event);
-    	return new ResponseEntity<>(HttpStatus.ACCEPTED);
+    	return new ResponseEntity<>(source, HttpStatus.ACCEPTED);
     }
 }

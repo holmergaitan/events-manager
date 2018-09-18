@@ -8,9 +8,17 @@ import com.vivid.partnerships.interview.dto.VenueDTO;
 import com.vivid.partnerships.interview.model.Event;
 import com.vivid.partnerships.interview.model.Venue;
 
+/**
+ * Converts from {@link Event} to {@link EventDTO}
+ * 
+ * @version 0.1
+ */
 @Component
 public class EventModelToEventApi implements Converter<Event, EventDTO> {
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public EventDTO convert(final Event source) {
 		
