@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <script src="js/libs/angular.min.js"></script>
 <script src="js/libs/angular-route.js"></script>
-<script src="js/libs/appmodule.js"></script>
+<script src="js/libs/event-service.js"></script>
 <title>Buy and Sell Tickets: Concerts, Sports, &amp; Theatre |
 	Vivid Seats</title>
 <meta name="viewport"
@@ -119,7 +119,8 @@
 															<label class="control-label" for="date">Date</label>
 															<div class="controls">
 																<input type="text" class="span6" name="date"
-																	ng-model="eventsctr.eventDetail.date" required>
+																	ng-model="eventsctr.eventDetail.date"
+																	ng-click="clearfunction(this)" required>
 															</div>
 														</div>
 
