@@ -15,7 +15,7 @@ $ gradle bootRun
 The application runs in the 8080 port. You can access to the main page in the next url: localhost:8080
 
 # App endpoints
-To send a new even request, use the next endpoint: 
+To send a new event request, use the next endpoint: 
 localhost:8080/events, POST method
 ```
   {
