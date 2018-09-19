@@ -1,6 +1,7 @@
 # App requeriments
 Java version: 8
-Gradle version: 4.0 o later to support org.springframework.boot plugin.
+
+Gradle version: 4.0 or later to support org.springframework.boot plugin
 
 # Configuration
 In the root project, execute next command to perform a build: 
@@ -23,7 +24,7 @@ localhost:8080/events, POST method
        "venueDTO": {
            "name": "Wrigley Field",
            "city": "Chicago",
-           "state": "Chicago"
+           "state": "IL"
        }
    }
 ```
@@ -37,7 +38,7 @@ localhost:8080/events, GET method
          "venueDTO": {
              "name": "Wrigley Field",
              "city": "Chicago",
-             "state": "Chicago"
+             "state": "IL"
          }
      }
   ]
