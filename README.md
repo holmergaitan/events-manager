@@ -1,2 +1,44 @@
-# events-manager
-On any system with the JDK installed, running the application from the command line should be as simple as './gradlew bootRun'. You may want to leverage an IDE to develop and debug. The application will be available on localhost:8080.
+# App requeriments
+Java version: 8
+Gradle version: 4.0 o later to support org.springframework.boot plugin.
+
+# Configuration
+In the root project, execute next command to perform a build: 
+```
+$ gradle clean build
+```
+In the root project, execute next command to run the application: 
+```
+$ gradle bootRun
+```
+The application listen in the 8080 port. You can access to the main page by next url: localhost:8080
+
+# App endpoints
+To send a new Even request, use the next endpoint: 
+localhost:8080/events, POST method
+```
+  {
+       "name": "Chicago White Sox vs. Chicago Cubs",
+       "date": "2018-09-18",
+       "venueDTO": {
+           "name": "Wrigley Field",
+           "city": "Chicago",
+           "state": "Chicago"
+       }
+   }
+```
+To query all events, uste the next endpoint:
+localhost:8080/events, GET method
+```
+  [
+    {
+         "name": "Chicago White Sox vs. Chicago Cubs",
+         "date": "2018-09-18",
+         "venueDTO": {
+             "name": "Wrigley Field",
+             "city": "Chicago",
+             "state": "Chicago"
+         }
+     }
+  ]
+```
