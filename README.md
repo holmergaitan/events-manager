@@ -12,10 +12,10 @@ In the root project, execute next command to run the application:
 ```
 $ gradle bootRun
 ```
-The application listen in the 8080 port. You can access to the main page by next url: localhost:8080
+The application runs in the 8080 port. You can access to the main page in the next url: localhost:8080
 
 # App endpoints
-To send a new Even request, use the next endpoint: 
+To send a new even request, use the next endpoint: 
 localhost:8080/events, POST method
 ```
   {
